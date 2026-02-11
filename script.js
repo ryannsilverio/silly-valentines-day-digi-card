@@ -33,60 +33,31 @@ if (envelope) {
         console.log("Audio play failed:", error);
       });
     }
-    if (scaryAudio) {
-      scaryAudio.pause();
-      scaryAudio.currentTime = 0;
-    }
-    if (danceAudio) {
-      danceAudio.pause();
-      danceAudio.currentTime = 0;
-    }
   });
 }
 
 if (yesButton) {
   yesButton.addEventListener("click", () => {
-    window.location.href = "yessssss.html";
     if (audio) {
       audio.pause();
       audio.currentTime = 0;
     }
-    if (scaryAudio) {
-      scaryAudio.pause();
-      scaryAudio.currentTime = 0;
-    }
-    if (danceAudio) {
-      danceAudio.pause();
-      danceAudio.currentTime = 0;
-    }
+    window.location.href = "yessssss.html";
   });
 }
 
 if (noButton) {
   noButton.addEventListener("click", () => {
-    window.location.href = "no.html";
     if (audio) {
       audio.pause();
       audio.currentTime = 0;
     }
-    if (scaryAudio) {
-      scaryAudio.pause();
-      scaryAudio.currentTime = 0;
-    }
-    if (danceAudio) {
-      danceAudio.pause();
-      danceAudio.currentTime = 0;
-    }
+    window.location.href = "no.html";
   });
 }
 
 if (backButton) {
   backButton.addEventListener("click", () => {
-    window.location.href = "index.html";
-    if (audio) {
-      audio.pause();
-      audio.currentTime = 0;
-    }
     if (scaryAudio) {
       scaryAudio.pause();
       scaryAudio.currentTime = 0;
@@ -95,6 +66,7 @@ if (backButton) {
       danceAudio.pause();
       danceAudio.currentTime = 0;
     }
+    window.location.href = "index.html";
   });
 }
 
